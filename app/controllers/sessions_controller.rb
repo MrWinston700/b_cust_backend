@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
             user = current_users
             render json: {
                 logged_in: true,
-                user: { email: user.email, name: user.name, id: user.id }
+                user: { email: user.email, name: user.name }
             }
         else 
             render json: {
